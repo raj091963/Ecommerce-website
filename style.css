@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    color: black;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 20px 20px;
+    background: #000;
+}
+.company_name{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+}
+.dropdown{
+    display: flex;
+}
+.dropbtn div{
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: #ffffff;
+    visibility: hidden;
+}
+.menu{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+}
+.menu a{
+    text-decoration: none;
+    padding: 0px 5px;
+    color:white;
+    border-bottom: 2px solid black;
+}
+.menu a:hover,.menu a:active{
+    border-bottom: 2px solid white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: -webkit-center;
+    height: 90vh;
+    background-image: url('images/intro.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#home div{
+    padding: 3px;
+}
+#home div:nth-child(1),#home div:nth-child(3),#home div:nth-child(4){
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+#home div:nth-child(1){
+    color: rgb(0, 115, 255);
+}
+#home div:nth-child(2){
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#home div:nth-child(3){
+    padding: 10px;
+    color: #343434;
+}
+#home div:nth-child(4) button{
+    padding: 12px 25px;
+    border-radius: 50px;
+    color: white;
+    background: rgb(0, 115, 255);
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin-top:20px ;
+}
+#home div:nth-child(4) button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
+}
+
+
+#services{
+    text-align: -webkit-center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px 0px;
+}
+.Topic_heading{
+    font-size: 18px;
+    font-weight: bold;
+}
+.Topic_heading span{
+    color: rgb(0, 115, 255);
+}
+.standing_line{
+    margin: 15px 2px;
+    width: 2px;
+    height: 35px;
+    background: #787676;
+}
+.description{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.description div{
+    color: #787676;
+
+}
+#showingServices{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.feature{
+   background: #e2e2e2;
+   padding: 20px 15px;
+   text-align: left;
+   border-radius: 5%;
+}
+.feature:hover{
+    background: rgb(0, 115, 255);
+}
+.feature:hover div:nth-child(1){
+    background-color: white;
+}
+.feature:hover div{
+    color: white;
+}
+.feature div:nth-child(1){
+    background: rgb(0, 115, 255);
+    border-radius: 50%;
+    width: fit-content;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.feature div:nth-child(2){
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+
+#record{
+    text-align: -webkit-center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    padding: 20px 0px;
+}
+#record img{
+    width: 100%;
+    height: auto;
+
+}
+
+
+#team{
+    text-align: -webkit-center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    padding: 20px 0px;
+}
+#showingteam{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 15px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.teamMember:hover img{
+    opacity: 0.5;
+}
+.teamMember:hover div:nth-child(2){
+    background-color: #e2e2e2;
+    visibility:visible;
+}
+.teamMember img{
+    width: 100%;
+    height: auto;
+}
+.teamMember div:nth-child(2){
+    padding: 12px 6px;
+    visibility: hidden;
+}
+
+
+
+#about{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 20%;
+    margin-right: 25%;
+    padding: 20px 0px;
+    align-items: center;
+}
+
+#about img{
+    width: 100%;
+}
+.describeAbout{
+    margin: 30px 1px;
+    line-height: 25px;
+    background-color: #e2e2e2;
+    padding: 25px 12px;
+}
+.describeAbout div:nth-child(2), .describeAbout div:nth-child(3){
+    padding-top: 6px;
+}
+
+
+#product{
+    text-align: -webkit-center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    padding: 20px 0px;
+}
+.display_products{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 20px;
+}
+.showPro{
+    box-shadow: 0 0 10px 1px #787676;
+    border-radius: 20px;
+}
+.showPro div{
+    padding: 20px 12px;
+}
+.showPro div:nth-child(1){
+    font-weight: bold;
+}
+.showPro div:nth-child(2){
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(0, 115, 255);
+}
+.showPro div:nth-child(3){
+    color: #787676;
+}
+.showPro ul{
+    list-style: none;
+    line-height: 40px;
+    padding: 0px 20px;
+}
+.showPro ul li{
+    border-bottom: 1px solid #787676;
+}
+.showPro button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    color: white;
+    background: rgb(0, 115, 255);
+    border: 2px solid white;
+    cursor: pointer;
+}
+.showPro button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
+}
+
+#contact{
+    text-align: -webkit-center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    background-color: #e2e2e2;
+    padding: 20px 0px;
+}
+.form input,.form textarea,.form button{
+    padding: 10px 15px;
+    margin-bottom: 12px;
+    min-width: 30%;
+    border: 2px solid #787676;
+}
+.form input:hover,.form textarea:hover{
+    border: 2px solid rgb(0, 115, 255);
+}
+.form button{
+    border-radius: 10px;
+    color: white;
+    background: rgb(0, 115, 255);
+    border: 2px solid #e2e2e2;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
+}
+.form :-ms-input-placeholder {
+    color: #e2e2e2;
+}
+#footer{
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+    background: #000;
+}
+#footer div:nth-child(2){
+    color: white;
+    padding-top: 6px;
+}

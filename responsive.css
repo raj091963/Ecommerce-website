@@ -1,0 +1,115 @@
+@media only screen and (max-width:1100px){
+    #showingServices{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .display_products{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media  only screen and (max-width:1000px) {
+    .describeAbout div:nth-child(2), .describeAbout div:nth-child(3){
+        font-size: 12px;
+    }
+    .feature{
+        font-size: 12px;
+    }
+    .showPro{
+        font-size: 12px;
+    }
+    .showPro div{
+        padding: 15px 8px;
+    }
+    .showPro ul{
+        line-height: 25px;
+    }
+}
+@media  only screen and (max-width:850px){
+    .describeAbout div:nth-child(2), .describeAbout div:nth-child(3){
+        font-size: 8px;
+        padding: 6px 2px;
+    }
+    .feature{
+        font-size: 8px;
+    }
+    .showPro{
+        font-size: 8px;
+        overflow: scroll;
+    }
+    .showPro div{
+        padding: 10px 5px;
+    }
+    #about{
+        margin-top: 2px;
+    }
+}
+@media  only screen and (max-width:661px){
+    .form input, .form textarea, .form button{
+        min-width: 50%;
+    }
+}
+@media  only screen and (max-width:673px){
+    .dropbtn div {
+        visibility: visible;
+        cursor: pointer;
+    }
+    .menu{
+        visibility:collapse;
+    }
+    .dropdown{
+        position: relative;
+        display: inline-block;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        min-width: 160px;
+        z-index: 1;
+    }
+    .menu a{
+        display: block;
+        padding: 12px 16px;
+    }
+    .dropdown:hover .menu{
+        display: block;
+    }
+    .dropdown:hover .dropbtn{
+        background-color: white;
+    }
+    .menu a:hover{
+        background-color: blue;
+    }
+}
+@media  only screen and (max-width:500px){
+    #showingServices{
+        grid-template-columns: auto auto;
+    }
+    .display_products{
+        grid-template-columns: auto ;
+        row-gap: 15px;
+        column-gap:15px;
+    }
+    #about{
+        grid-template-columns: auto ;
+    }
+    .describeAbout{
+        margin: 2px;
+    }
+}
+@media  only screen and (max-width:388px){
+    #home div:nth-child(2){
+        font-size: 40px;
+    }
+    .form input, .form textarea, .form button{
+        min-width: 70%;
+    }
+    #showingteam{
+        grid-template-columns: auto auto;
+    }
+}
+@media  only screen and (max-width:346px){
+    #home div:nth-child(2){
+        font-size: 30px;
+    }
+}  
